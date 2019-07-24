@@ -41,12 +41,13 @@ body {
     position: absolute;
     top: 40%;
     left: 50%;
-    color: #FFFFFF;
     text-transform: uppercase;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .header__primary {
+    color: #FFFFFF;
     backface-visibility: hidden;
 }
 
@@ -70,6 +71,7 @@ body {
     font-weight: 700;
     letter-spacing: 17.4px;
     animation: moveInRight 1s ease-out;
+    margin-bottom: 50px;
 }
 
 @keyframes moveInLeft {
@@ -98,4 +100,28 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #FFFFFF;
+    color: #777777;
 }
