@@ -1,0 +1,26 @@
+{
+  "name": "tours",
+  "version": "1.0.0",
+  "description": "OUTDOORS IS WHERE LIFE HAPPENS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishanjasani/Tour.git"
+  },
+  "keywords": [
+    "tours",
+    "travells"
+  ],
+  "author": "Kishan Jasani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kishanjasani/Tour/issues"
+  },
+  "homepage": "https://github.com/kishanjasani/Tour#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
