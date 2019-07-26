@@ -215,6 +215,35 @@ body {
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
+  .card__side {
+    height: 50rem;
+    font-size: 2rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #FFB900, #FF7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #7ED56F, #28B485); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998FF, #5643FA); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+
 /* Header */
 .header {
   height: 95vh;
@@ -270,10 +299,14 @@ body {
 
 .section-features {
   margin-top: -7rem;
-  background-color: #f7f7f7;
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
   background-size: cover;
   transform: skewY(-6deg); }
   .section-features > * {
     transform: skewY(6deg); }
+
+.section-tours {
+  margin-top: -7rem;
+  padding: 20rem 0 50rem 0;
+  background-color: #f7f7f7; }

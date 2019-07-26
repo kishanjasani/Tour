@@ -6,7 +6,6 @@
 
 .section-features {
     margin-top: -7rem;
-    background-color: $color-grey-light-1;
     padding: 20rem 0;
     background-image: linear-gradient(
         to right bottom,
@@ -18,4 +17,10 @@
     & > * {
         transform: skewY(6deg);
     }
+}
+
+.section-tours {
+    margin-top: -7rem;
+    padding: 20rem 0 50rem 0;
+    background-color: $color-grey-light-1;
 }
