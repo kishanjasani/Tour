@@ -73,9 +73,7 @@
             width: 1rem;
             border-radius: 50%;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include centerhorver;
             background-color: $color-primary;
             opacity: 0;
             transition: all .3s;
